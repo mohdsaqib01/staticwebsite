@@ -1,1 +1,72 @@
-welcome to django
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 3</title>
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            *{
+                padding:0 ;
+                margin: 0;
+            }
+            .container{
+                min-height: 100vh;
+                position: relative;
+                overflow-x: hidden;
+            }
+            .bg{
+                 position: absolute;
+                 height: 100%;
+                 width: 150%;
+                 background-image: linear-gradient(90deg, rgb(74, 21, 167), rgb(33, 95, 176));
+                 z-index: -1;
+                 transform: rotate(188deg) translate(100px, 100px);
+
+            }
+        </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="bg"></div>
+        <div class="content">
+            <div class="logo-area">
+                <i class="fa fa-cog"></i>
+                zimcore<br>hub
+            </div>
+            <div class="tagline">
+                Change the world <br>
+                <b>one app at a time</b>
+                <button>Learn more</button>
+            </div>
+        </div>
+        <div class="image-area">
+            <img src="/static/image/image1.png" alt="ek image">
+        </div>
+
+    </section>
+    <section class="container">
+
+    </section>
+    <section class="container">
+
+    </section>
+    <section class="container">
+
+    </section>
+    <section class="container">
+
+    </section>
+</body>
+
+</html>
