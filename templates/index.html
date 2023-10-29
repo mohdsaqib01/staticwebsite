@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout 3</title>
+    <title>Layout 3</title>
     <!-- FontAwesome 6.2.0 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -14,48 +14,131 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <style>
-            *{
-                padding:0 ;
-                margin: 0;
-            }
-            .container{
-                min-height: 100vh;
-                position: relative;
-                overflow-x: hidden;
-            }
-            .bg{
-                 position: absolute;
-                 height: 100%;
-                 width: 150%;
-                 background-image: linear-gradient(90deg, rgb(74, 21, 167), rgb(33, 95, 176));
-                 z-index: -1;
-                 transform: rotate(188deg) translate(100px, 100px);
 
-            }
-        </style>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        
+        }
+        .container:first-child{
+            overflow-y: hidden;
+        }
+
+        .inner-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 80%;
+            margin-inline:auto;
+            padding-top: 3rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           /* outline: 2px dotted green;*/
+        }
+
+        .bg {
+            position: absolute;
+            height: 100%;
+            width: 150%;
+            background-image: linear-gradient(90deg, rgb(51, 51, 249), rgb(57, 222, 251));
+            z-index: -1;
+            transform: rotate(188deg) translate(100px, 100px);
+            
+        }
+
+        .tagline {
+            padding: 2rem;
+           /* outline:1px dotted yellow;*/
+
+        }
+        
+        .tagline p, .tagline span {
+            line-height: 1;
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            word-spacing: 0rem;
+        }
+        .tagline span{
+            font-weight: bolder;
+        }
+
+        button {
+            border: none;
+            border-radius: 50px;
+            background-color: white;
+            color: rgb(22, 109, 223);
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 1rem ;
+            width: 200px;
+            
+        }
+        .img-area{
+            /* outline: 1px dotted red; */
+        }
+        .img-area img{
+            height:600px ;
+            
+            
+        }
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            font-size: 2rem;
+            line-height: 1.2;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            /* outline: 1px dotted red; */
+        }
+    </style>
 </head>
 
 <body>
     <section class="container">
         <div class="bg"></div>
-        <div class="content">
-            <div class="logo-area">
-                <i class="fa fa-cog"></i>
-                zimcore<br>hub
+        <div class="inner-container">
+            <div class="content">
+                <div class="logo">
+                    <i class="fa fa-cog fa-3x"></i>
+                    zimcore<br>hubs
+                </div>
+                <div class="tagline">
+                    <p>
+                        Changing the world <br>
+                        <span>one app at a time</span>
+                    </p>
+                </div>
+                <button>
+                    Learn More
+                </button>
             </div>
-            <div class="tagline">
-                Change the world <br>
-                <b>one app at a time</b>
-                <button>Learn more</button>
+            <div class="img-area">
+                <img src="/static/image/img1.png" alt="ek image">
             </div>
         </div>
-        <div class="image-area">
-            <img src="/static/image/image1.png" alt="ek image">
-        </div>
-
     </section>
-    <section class="container">
+        
 
     </section>
     <section class="container">
