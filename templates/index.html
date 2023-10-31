@@ -29,9 +29,10 @@
             min-height: 100vh;
             position: relative;
             overflow-x: hidden;
-        
+
         }
-        .container:first-child{
+
+        .container:first-child {
             overflow-y: hidden;
         }
 
@@ -41,14 +42,15 @@
             flex-direction: row;
             justify-content: space-evenly;
             width: 80%;
-            margin-inline:auto;
+            margin-inline: auto;
             padding-top: 3rem;
         }
+
         .content {
             display: flex;
             flex-direction: column;
             align-items: center;
-           /* outline: 2px dotted green;*/
+            /* outline: 2px dotted green;*/
         }
 
         .bg {
@@ -58,23 +60,25 @@
             background-image: linear-gradient(90deg, rgb(51, 51, 249), rgb(57, 222, 251));
             z-index: -1;
             transform: rotate(188deg) translate(100px, 100px);
-            
+
         }
 
         .tagline {
             padding: 2rem;
-           /* outline:1px dotted yellow;*/
+            /* outline:1px dotted yellow;*/
 
         }
-        
-        .tagline p, .tagline span {
+
+        .tagline p,
+        .tagline span {
             line-height: 1;
             font-size: 3rem;
             color: white;
             text-align: center;
             word-spacing: 0rem;
         }
-        .tagline span{
+
+        .tagline span {
             font-weight: bolder;
         }
 
@@ -86,19 +90,22 @@
             font-weight: bold;
             font-size: 1rem;
             text-transform: uppercase;
-            padding: 1rem ;
+            padding: 1rem;
             width: 200px;
-            
+
         }
-        .img-area{
+
+        .img-area {
             /* outline: 1px dotted red; */
         }
-        .img-area img{
-            height:600px ;
-            
-            
+
+        .img-area img {
+            height: 600px;
+
+
         }
-        .logo{
+
+        .logo {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -111,6 +118,67 @@
             padding: 1rem 2rem;
             /* outline: 1px dotted red; */
         }
+
+        .cont {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: .5rem;
+            align-items: center;
+            
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 2rem;
+            width: 550px;
+
+        }
+        .hed {
+color:  rgb(22, 109, 223);
+font-family: sans-serif;
+font-weight: bold;
+font-size: 2.5rem;
+padding-bottom: 2rem;
+justify-content: center;
+        }
+.para{
+    width: 500px;
+    justify-content: center;
+    /* word-spacing: .5rem; */
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    
+
+}
+.picture{
+height: 26rem;
+width: 15rem;
+border-radius: 2rem;
+}
+.picture2{
+    height: 26rem;
+    width: 15rem;
+    border-radius: 2rem;
+    /* justify-content: center; */
+    margin-top: 8rem;
+    
+}
+/* .hed2{
+    display: flex;
+    justify-content: center;
+} */
+.h{
+    font-family:sans-serif;
+display: flex;
+justify-content: center;
+font-size: 3rem;
+color:  rgb(22, 109, 223);
+padding-top: 5rem;
+}
+
     </style>
 </head>
 
@@ -134,18 +202,39 @@
                 </button>
             </div>
             <div class="img-area">
-                <img src="/static/image/img1.png" alt="ek image">
+                <img src="/static/image/img1.png" alt="ek image" >
             </div>
         </div>
     </section>
-        
+
 
     </section>
     <section class="container">
 
+        <div class="cont">
+            <div class="col">
+                <h1 class="hed">Our Company Story</h1>
+
+                <p class="para">Zimcore hubs was formed by college friends tasked to create an app for there thesis.The enjoyed
+                    working together so much that they built a company.</p>
+            </div>
+            <!-- <div class="pics"> -->
+                <div class="pic1"><img src="/static/image/image22.jpg" alt=" pehla founder" class="picture"></div>
+                    <div class="pic2"> <img src="/static/image/image111.jpg" alt="dusra  founder" class="picture2">
+                    </div>
+                </div>
+            <!-- </div> -->
+
     </section>
     <section class="container">
-
+    <!-- <div class="hed2"> -->
+<h1 class="h">our sevices</h1>
+<!-- </div> -->
+<div class="cards">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+</div>
     </section>
     <section class="container">
 
