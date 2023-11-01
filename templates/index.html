@@ -98,7 +98,7 @@
         .img-area {
             /* outline: 1px dotted red; */
         }
-
+``````````
         .img-area img {
             height: 600px;
 
@@ -120,10 +120,13 @@
         }
 
         .cont {
+            display: flex;
+            justify-content: center;
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             gap: .5rem;
             align-items: center;
+            padding: 3rem;
             
         }
 
@@ -131,8 +134,10 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 2rem;
+            /* padding-left: 3rem; */
             width: 550px;
+            /* background-color: aqua; */
+            padding-right: 3rem;
 
         }
         .hed {
@@ -154,13 +159,13 @@ justify-content: center;
 
 }
 .picture{
-height: 26rem;
-width: 15rem;
+height: 20rem;
+width: 12rem;
 border-radius: 2rem;
 }
 .picture2{
-    height: 26rem;
-    width: 15rem;
+    height: 20rem;
+    width: 12rem;
     border-radius: 2rem;
     /* justify-content: center; */
     margin-top: 8rem;
@@ -174,12 +179,49 @@ border-radius: 2rem;
     font-family:sans-serif;
 display: flex;
 justify-content: center;
-font-size: 3rem;
+/* text-align: center; */
+font-size: 2.5rem;
 color:  rgb(22, 109, 223);
 padding-top: 5rem;
+background-color: aqua;
+margin-bottom: 3rem;
+
+}
+.cards{
+   display: flex;
+   justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: yellowgreen;
+    
+}
+.c1{ margin-left: 9rem;
+   align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+    border-radius: 1.5rem;
+}
+.c2{display: flex;
+align-items: center;
+height: 250px;
+width: 250px;
+background-color: blue;
+border-radius: 1.5rem;
+margin-left: 3.5rem;
+}
+.c3{
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+    margin-left: 3rem;
+    border-radius: 1.5rem;
+    margin-right: 10rem;
 }
 
-    </style>
+</style>
 </head>
 
 <body>
@@ -231,9 +273,25 @@ padding-top: 5rem;
 <h1 class="h">our sevices</h1>
 <!-- </div> -->
 <div class="cards">
-    <div class="c1"></div>
-    <div class="c2"></div>
-    <div class="c3"></div>
+    <div class="c1">
+        <div class="logo1">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+        </div>
+        <h1> App Consultancy</h1>
+        <p>We help you define the best features for your app</p>
+    </div>
+    <div class="c2">
+        <div class="logo2">
+            <i class="fa fa-calculator" aria-hidden="true" fa-3x></i>
+        </div>
+        <h1>UX and UI Design</h1>
+        <p>We provide outstanding app design for your users</p>
+    </div>
+    <div class="c3">
+        <div class="logo3"> 
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+        </div>
+    </div>
 </div>
     </section>
     <section class="container">
